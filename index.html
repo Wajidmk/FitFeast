@@ -4,223 +4,104 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FitFeast Gourmet Meals</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<style>
-body {
-font-family: Arial, sans-serif;
-line-height: 1.6;
-color: #333;
-margin: 0;
-padding: 0;
-background-color: #f4f4f4;
-}
-
-header {
-background-color: #4CAF50;
-color: white;
-text-align: center;
-padding: 1rem;
-}
-
-nav {
-background-color: #333;
-color: white;
-padding: 0.5rem;
-}
-
-nav ul {
-list-style-type: none;
-padding: 0;
-margin: 0;
-display: flex;
-justify-content: center;
-}
-
-nav ul li {
-margin: 0 1rem;
-}
-
-nav ul li a {
-color: white;
-text-decoration: none;
-padding: 0.5rem 1rem;
-display: inline-block;
-}
-
-nav ul li a:hover {
-background-color: #575757;
-border-radius: 5px;
-}
-
-.hero {
-background-image: url('images/hero-background.jpg');
-background-size: cover;
-background-position: center;
-height: 400px;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-color: white;
-}
-
-.hero-content {
-background-color: rgba(0, 0, 0, 0.6);
-padding: 2rem;
-border-radius: 10px;
-}
-
-.container {
-max-width: 1200px;
-margin: 0 auto;
-padding: 2rem;
-}
-
-.features {
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-}
-
-.feature {
-flex-basis: calc(33.333% - 2rem);
-margin: 1rem;
-background-color: #fff;
-padding: 1.5rem;
-border-radius: 5px;
-text-align: center;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.cta {
-background-color: #4CAF50;
-color: white;
-text-align: center;
-padding: 3rem;
-}
-
-.cta h2 {
-margin: 0 0 1rem;
-}
-
-.cta p {
-margin: 0 0 2rem;
-}
-
-.button {
-display: inline-block;
-background-color: #333;
-color: white;
-padding: 0.8rem 1.5rem;
-text-decoration: none;
-border-radius: 5px;
-transition: background-color 0.3s;
-}
-
-.button:hover {
-background-color: #555;
-}
-
-.app-downloads {
-display: flex;
-justify-content: center;
-gap: 1rem;
-margin: 2rem 0;
-}
-
-.app-downloads a {
-display: inline-block;
-text-decoration: none;
-}
-
-.app-downloads img {
-width: 150px;
-height: auto;
-}
-
-footer {
-background-color: #333;
-color: white;
-text-align: center;
-padding: 1rem;
-margin-top: 2rem;
-}
-
-</style>
-<header>
-<h1>FitFeast Gourmet Meals</h1>
-</header>
-<nav>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#meals">Meals</a></li>
-<li><a href="#how-it-works">How It Works</a></li>
-<li><a href="#download">Download App</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-<main>
-<section id="home" class="hero">
-<div class="hero-content">
-<h2>Healthy, Delicious Meals Delivered to Your Door</h2>
-<p>Customizable gourmet meals prepared by expert chefs</p>
-<a href="#download" class="button">Get Started</a>
-</div>
-</section>
-<section id="about" class="container">
-<h2>About FitFeast</h2>
-<p>FitFeast Gourmet Meals is revolutionizing healthy eating for busy professionals. We offer customizable, nutritious, and delicious ready-to-eat meals delivered directly to your doorstep. Our mission is to make healthy eating effortless and enjoyable.</p>
-</section>
-<section id="meals" class="container">
-<h2>Our Meals</h2>
-<div class="features">
-<div class="feature">
-<h3>Customizable</h3>
-<p>Tailor your meals to your dietary preferences and nutritional needs.</p>
-</div>
-<div class="feature">
-<h3>Chef-Prepared</h3>
-<p>Gourmet meals crafted by professional chefs using high-quality ingredients.</p>
-</div>
-<div class="feature">
-<h3>Nutritionist-Approved</h3>
-<p>Every meal is balanced and approved by our certified nutritionists.</p>
-</div>
-</div>
-</section>
-<section id="how-it-works" class="container">
-<h2>How It Works</h2>
-<ol>
-<li>Choose your meal plan (weekly, monthly, or custom)</li>
-<li>Customize your meals based on your preferences and dietary needs</li>
-<li>Receive fresh, ready-to-eat meals at your doorstep</li>
-<li>Heat, eat, and enjoy your delicious, healthy meals</li>
-</ol>
-</section>
-<section id="download" class="container">
-<h2>Download Our App</h2>
-<p>Enjoy the convenience of managing your meals right from your phone. Download our app from the Play Store or App Store!</p>
-<div class="app-downloads">
-<a href="https://play.google.com/store/apps/details?id=com.fitfeast" target="_blank">
-<img src="images/google-play.png" alt="Google Play">
-</a>
-<a href="https://apps.apple.com/app/id123456789" target="_blank">
-<img src="images/app-store.png" alt="App Store">
-</a>
-</div>
-</section>
-<section class="cta">
-<h2>Ready to Start Your Health Journey?</h2>
-<p>Join FitFeast today and experience the convenience of healthy, gourmet meals delivered to you.</p>
-<a href="#download" class="button">Sign Up Now</a>
-</section>
-</main>
-<footer>
-<p>© 2024 FitFeast Gourmet Meals. All rights reserved.</p>
-</footer>
-<script src="scripts.js"></script>
-</body>
-</html>
+    <body>
+        <header class="bg-primary text-white text-center py-4">
+          <h1>FitFeast Gourmet Meals</h1>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">FitFeast</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#meals">Meals</a></li>
+              <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
+              <li class="nav-item"><a class="nav-link" href="#download">Download App</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <main>
+          <section id="home" class="hero text-white d-flex align-items-center" style="background-image: url('path/to/your/image.jpg'); height: 100vh;">
+            <div class="container text-center">
+              <h2>Healthy, Delicious Meals Delivered to Your Door</h2>
+              <p>Customizable gourmet meals prepared by expert chefs</p>
+              <a href="#download" class="btn btn-lg btn-light">Get Started</a>
+            </div>
+          </section>
+          <section id="about" class="container py-5">
+            <h2>About FitFeast</h2>
+            <p>FitFeast Gourmet Meals is revolutionizing healthy eating for busy professionals. We offer customizable, nutritious, and delicious ready-to-eat meals delivered directly to your doorstep. Our mission is to make healthy eating effortless and enjoyable.</p>
+          </section>
+          <section id="meals" class="container py-5">
+            <h2>Our Meals</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h3 class="card-title">Customizable</h3>
+                    <p class="card-text">Tailor your meals to your dietary preferences and nutritional needs.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h3 class="card-title">Chef-Prepared</h3>
+                    <p class="card-text">Gourmet meals crafted by professional chefs using high-quality ingredients.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h3 class="card-title">Nutritionist-Approved</h3>
+                    <p class="card-text">Every meal is balanced and approved by our certified nutritionists.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="how-it-works" class="container py-5">
+            <h2>How It Works</h2>
+            <ol>
+              <li>Choose your meal plan (weekly, monthly, or custom)</li>
+              <li>Customize your meals based on your preferences and dietary needs</li>
+              <li>Receive fresh, ready-to-eat meals at your doorstep</li>
+              <li>Heat, eat, and enjoy your delicious, healthy meals</li>
+            </ol>
+          </section>
+          <section id="download" class="container py-5">
+            <h2>Download Our App</h2>
+            <p>Enjoy the convenience of managing your meals right from your phone. Download our app from the Play Store or App Store!</p>
+            <div class="d-flex justify-content-around">
+              <a href="https://play.google.com/store/apps/details?id=com.fitfeast" target="_blank">
+                <img src="images/google-play.png" alt="Google Play" class="img-fluid">
+              </a>
+              <a href="https://apps.apple.com/app/id123456789" target="_blank">
+                <img src="images/app-store.png" alt="App Store" class="img-fluid">
+              </a>
+            </div>
+          </section>
+          <section class="cta text-center py-5 bg-primary text-white">
+            <h2>Ready to Start Your Health Journey?</h2>
+            <p>Join FitFeast today and experience the convenience of healthy, gourmet meals delivered to you.</p>
+            <a href="#download" class="btn btn-lg btn-light">Sign Up Now</a>
+          </section>
+        </main>
+        <footer class="bg-dark text-white text-center py-4">
+          <p>© 2024 FitFeast Gourmet Meals. All rights reserved.</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </body>
+        </html>
+        
